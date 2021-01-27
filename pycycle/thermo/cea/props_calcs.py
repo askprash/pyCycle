@@ -81,7 +81,7 @@ class PropsCalcs(ExplicitComponent):
         Cpe += np.sum(nj_H0*H0_T)  # nj*H0_T**2
         Cpe -= np.sum(nj_H0)*result_T[num_element]
 
-        outputs['h'] = np.sum(nj_H0)*R_UNIVERSAL_ENG*T
+        outputs['h'] = np.sum(nj_H0)*R_UNIVERSAL_ENG*T#[prash - trying to investigate weird enthalpy vals]
 
         try:
             val = (S0_T+np.log(n_moles/nj/(P/P_REF)))

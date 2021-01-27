@@ -2,7 +2,7 @@ import sys
 
 
 def print_flow_station(prob, fs_names, file=sys.stdout):
-    names = ['tot:P', 'tot:T', 'tot:h', 'tot:S', 'stat:P', 'stat:W', 'stat:MN', 'stat:V', 'stat:area']
+    names = ['tot:P', 'tot:T', 'tot:h', 'tot:Cp', 'tot:S', 'stat:P', 'stat:W', 'stat:MN', 'stat:V', 'stat:area']
 
     n_names = len(names)
     line_tmpl = '{:<23}|  '+'{:>13}'*n_names

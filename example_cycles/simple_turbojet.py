@@ -3,7 +3,7 @@ import sys
 import openmdao.api as om
 
 import pycycle.api as pyc
-
+print(pyc)
 
 class Turbojet(pyc.Cycle):
 
